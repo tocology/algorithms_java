@@ -9,7 +9,10 @@ public class KiwiJuiceEasy {
             int from = fromId[i];
             int to = toId[i];
 
-            if(capacities[to] >= bottles[to] + bottles[from]) bottles[to] += bottles[from];
+            if(capacities[to] >= bottles[to] + bottles[from]){
+                bottles[to] += bottles[from];
+                bottles[from] = 0;
+            }
             else {
                 int remains = bottles[to] + bottles[from] - capacities[to];
                 bottles[from] = remains;
