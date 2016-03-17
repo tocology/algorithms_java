@@ -27,6 +27,6 @@ public class InterestingParty {
     }
 
     public static void main(String[] argv){
-        
+
     }
 }
